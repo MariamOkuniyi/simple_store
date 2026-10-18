@@ -67,3 +67,6 @@ end
 
 # Faker generates realistic sample data for our products
 gem "faker"
+
+# CSV library for importing product data
+gem "csv"
