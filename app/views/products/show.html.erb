@@ -13,5 +13,8 @@
 <!-- Display the available stock quantity -->
 <p>Stock Quantity: <%= @product.stock_quantity %></p>
 
+<!-- Display the category associated with this product -->
+<p>Category: <%= @product.category.name %></p>
+
 <!-- Link back to the products listing page -->
 <%= link_to "Back to Products", products_path %>
