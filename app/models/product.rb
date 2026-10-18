@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
+  # Each product belongs to one category
+  belongs_to :category
+
   # Ensure every product has a title
   validates :title, presence: true
 
