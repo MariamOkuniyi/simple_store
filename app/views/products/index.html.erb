@@ -10,7 +10,8 @@
 <% @products.each do |product| %>
   <div>
     <!-- Display the product title -->
-    <h3><%= product.title %></h3>
+    <!-- Link each product title to its individual details page -->
+    <h3><%= link_to product.title, product_path(product) %></h3>
 
     <!-- Display the product price -->
     <p>Price: $<%= product.price %></p>
@@ -21,3 +22,4 @@
 
   <hr>
 <% end %>
+

@@ -1,0 +1,17 @@
+
+<h1>Product Details</h1>
+
+<!-- Display the selected product's title -->
+<h2><%= @product.title %></h2>
+
+<!-- Display the product's description -->
+<p>Description: <%= @product.description %></p>
+
+<!-- Display the product's price -->
+<p>Price: $<%= @product.price %></p>
+
+<!-- Display the available stock quantity -->
+<p>Stock Quantity: <%= @product.stock_quantity %></p>
+
+<!-- Link back to the products listing page -->
+<%= link_to "Back to Products", products_path %>
